@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glasbeni Inštrumenti</title>
+    <link rel="icon" type="image/x-icon" href="./images/fire.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Cdn -->
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Owl Carousel File -->
+    <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/navigasi.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <style>
+      .cart-count {
+          background-color: red;
+          color: white;
+          font-size: 14px;
+          border-radius: 50%;
+          padding: 3px 7px;
+          position: absolute;
+          top: 5px;
+          right: 10px;
+          display: none;
+      }
+  </style>
+</head>
+<style>
+    :root {
+  --row-gap: 20px;
+  --column-gap: 20px;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  line-height: 2;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.form-wrapper {
+  width: 800px;
+  margin: 0 auto;
+
+  .step-indicator-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 0;
+
+    .step {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+
+      .text-wrapper {
+        color: #000;
+      }
+
+      .fancy-line {
+        width: 20px;
+      }
+
+      .fancy-line-single {
+        height: 1px;
+        background-color: #000;
+
+        &.start {
+          margin: 0 5px 0 0;
+        }
+
+        &.end {
+          margin: 0 0 0 5px;
+        }
+      }
+
+      .fancy-line-double {
+        height: 15%;
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+
+        &.start {
+          margin: 0 10px 0 0;
+        }
+
+        &.end {
+          margin: 0 0 0 10px;
+        }
+      }
+    }
+
+    .step-2 {
+      .text-wrapper {
+        color: #ccc;
+      }
+
+      .fancy-line-single {
+        background-color: #ccc;
+      }
+
+      .fancy-line-double {
+        border-color: #ccc;
+      }
+    }
+  }
+
+  .checkout-form {
+    overflow: hidden;
+
+    .checkout-form-content {
+      display: flex;
+      transition: all 0.3s ease-in-out;
+
+      .billing-address-wrapper {
+        display: flex;
+        flex-flow: column;
+        flex: 0 0 100%;
+
+        .billing-address-title {
+          margin-top: 0;
+        }
+
+        .billing-address {
+          display: flex;
+          flex-flow: row wrap;
+
+          .select-wrapper {
+            position: relative;
+            display: grid;
+            grid-template-areas: "select";
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+
+            select {
+              appearance: none;
+              grid-area: select;
+              padding: 0 10px;
+              line-height: 2.2;
+              background-color: transparent;
+              border: none;
+            }
+            &::after {
+              position: relative;
+              grid-area: select;
+              content: "";
+              justify-self: end;
+              width: 0.8em;
+              height: 0.5em;
+              right: 10px;
+              background-color: #333;
+              clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+            }
+          }
+        }
+
+        .billing-next.button {
+          align-self: flex-end;
+        }
+      }
+
+      .delivery-and-payment {
+        flex: 0 0 100%;
+
+        .options {
+          .options-table {
+            padding: 40px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+
+            .option {
+              display: flex;
+              align-items: flex-start;
+
+              .option-content {
+                display: flex;
+                flex-flow: column;
+                margin: 0 10px;
+
+                .option-title-wrapper {
+                  display: flex;
+                }
+
+                .option-title {
+                  margin-bottom: 5px;
+                  font-weight: bold;
+                }
+
+                .option-description-card-logo {
+                  width: 40px;
+                }
+
+                .stripe-logo {
+                  position: relative;
+                  top: -10px;
+                  width: 80px;
+                }
+              }
+
+              .option-logo {
+                width: 40px;
+                margin-left: auto;
+              }
+
+              label {
+                margin-top: 10px;
+              }
+
+              .card-date-cvc-wrapper {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: var(--column-gap);
+              }
+            }
+          }
+        }
+
+        .buttons-wrapper {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+
+  &.step-2 {
+    .checkout-form-content {
+      transform: translateX(-100%);
+    }
+
+    .step-1 {
+      .text-wrapper {
+        color: #ccc;
+      }
+
+      .fancy-line-single {
+        background-color: #ccc;
+      }
+
+      .fancy-line-double {
+        border-color: #ccc;
+      }
+    }
+
+    .step-2 {
+      .text-wrapper {
+        color: #000;
+      }
+
+      .fancy-line-single {
+        background-color: #000;
+      }
+
+      .fancy-line-double {
+        border-color: #000;
+      }
+    }
+  }
+}
+
+.button {
+  margin: 20px 0 0 0;
+  padding: 0.7em 1em;
+  color: white;
+  background-color: #e15246;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.form-row {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+
+  &:not(:last-of-type) {
+    margin-bottom: var(--row-gap);
+  }
+}
+
+.form-row-half {
+  flex: 0 0 calc(50% - (var(--column-gap) / 2));
+}
+
+.form-row-half + .form-row-half {
+  margin-left: 20px;
+}
+
+.form-row-full {
+  flex: 0 0 100%;
+  display: flex;
+}
+
+.label-input-wrapper{
+  display: flex;
+  flex-flow: column;
+}
+</style>
+<section class="form-wrapper">
+    <div class="step-indicator-wrapper">
+     
+
+    </div>
+    <form action="submit" class="checkout-form">
+      <div class="checkout-form-content">
+
+        <div class="delivery-and-payment">
+          <div class="options delivery-options">
+            <h3 class="options-heading delivery-options-heading">Dostava</h3>
+            <ul class="options-table delivery-options-table">
+              <li class="option delivery-option">
+                <input type="radio" class="option-radio-button delivery-option-radio-button" name="delivery-options" checked>
+                <div class="option-content delivery-option-content">
+                  <p class="option-title delivery-option-title" style="color: #746a6a;">Prevzem</p>
+                  <p class="option-description delivery-option-description" style="color: #746a6a;">Dostava na prevzemno točko DHL</p>
+                </div>
+                <img src="https://ps.w.org/dhl-for-woocommerce/assets/icon.svg?rev=1777040" alt="" class="option-logo delivery-option-logo">
+              </li>
+            </ul>
+          </div>
+          <br>
+          <div class="options payment-options">
+            <h3 class="options-heading payment-options-heading">Plačilo</h3>
+            <ul class="options-table payment-options-table">
+              <li class="option payment-option">
+                <input type="radio" class="option-radio-button payment-option-radio-button" name="payment-options" checked>
+                <div class="option-content payment-option-content">
+                  <div class="option-title-wrapper">
+                    <p class="option-title payment-option-title" style="color: #746a6a;">Plačilo s kartico - powered by </p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png" alt="" class="stripe-logo">
+                  </div>
+                  <p class="option-description payment-option-description">
+                    <img src="https://usa.visa.com/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg" alt="" class="option-description-card-logo payment-option-description-card-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Mastercard_2019_logo.svg/800px-Mastercard_2019_logo.svg.png" alt="" class="option-description-card-logo payment-option-description-card-logo">
+                  </p>
+                  <label for="card-number" class="card-number-label">Številka kartice:</label>
+                  <input type="text" class="card-number" name="card-number">
+                  <div class="card-date-cvc-wrapper">
+                    <div class="label-input-wrapper">
+                      <label for="card-expiration" class="card-expiration-label">Veljavna do:</label>
+                      <input type="text" class="card-expiration" name="card-expiration">
+                    </div>
+                    <div class="label-input-wrapper">
+                      <label for="card-cvc" class="card-cvc-label">Varnostna koda(CVC)</label>
+                      <input type="text" class="card-cvc" name="card-cvc">
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="buttons-wrapper">
+            <div class="payment-buy button">Plačaj</div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>

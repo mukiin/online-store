@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glasbeni Inštrumenti</title>
+    <link rel="icon" type="image/x-icon" href="./images/fire.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cart-count {
+            background-color: red;
+            color: white;
+            font-size: 14px;
+            border-radius: 50%;
+            padding: 3px 7px;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="images/fire.png" class="logo" alt="" style="width: 30px; height: 30px;"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Domov</a></li>
+                <li><a class="active" href="shop.html">Trgovina</a></li>
+                <li><a href="about.html">O nas</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <li id="lg-bag">
+                    <a href="cart.html">
+                        <i class='bx bx-shopping-bag'></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                </li>
+                  <a href="#" id="close"><i class='bx bx-x'></i></a>
+              </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+            <i id="bar" class='bx bx-menu'></i>
+        </div>
+    </section>
+
+        <section id="prodetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="images/p6.png" width="100%" id="MainImg" alt="">
+
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="images/p6.png" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/p6.png" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/p6.png" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/p6.png" width="100%" class="small-img" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="single-pro-details">
+                <h4>Yamaha Pacifica</h4>
+                <div class="product_price">
+                    €130.00
+                </div>
+
+                <input type="number" value="1">
+                <button class="normal red_button1 add_to_cart_button" data-id="p6" data-name="Yamaha Pacifica" data-price="130.00" data-image="images/p6.png">Dodaj v košaro</button>
+                <h4>Podrobnosti o izdelku</h4>
+                <span>  
+                    Yamaha Pacifica je ena najbolj priljubljenih električnih kitar v svojem razredu, znana po svoji vsestranskosti,  
+                    udobju in kakovostni izdelavi. Opremljena je s tremi magneti (HSS konfiguracija), ki omogočajo širok spekter zvokov,  
+                    od čistih tonov do močnih rock in blues distorzij. Njeno udobno javorjevo vratilo in gladek prag omogočata enostavno igranje,  
+                    zaradi česar je idealna tako za začetnike kot tudi za izkušene kitariste. Zanesljiv tremolo sistem zagotavlja stabilnost  
+                    uglaševanja, robustna izdelava pa dolgotrajno vzdržljivost. Yamaha Pacifica je popolna izbira za vse glasbene stile!  
+                </span>
+            </div>
+        </section>
+        <section id="product1" class="section-p1">
+            <h2>Izbrani izdelki</h2>
+            <div class="pro-container">
+                <!-- Produkt 1 -->
+                <div class="pro" onclick="window.location.href='sproduct.html';">
+                    <img class="shirt" src="images/p1.png" alt="Yamaha APX600">
+                    <div class="des">
+                        <span>Yamaha</span>
+                        <h5>Yamaha APX600</h5>
+                        <div class="star">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>€150.00</h4>
+                        <p>Akustična kitara z električnim ojačevalnikom.</p>
+                    </div>
+                    
+                  </div>
+        
+                <!-- Produkt 2 -->
+                <div class="pro" onclick="window.location.href='digitalniklavir.html';">
+                    <img class="shirt" src="images/p2.png" alt="Yamaha PSR-E463">
+                    <div class="des">
+                        <span>Yamaha</span>
+                        <h5>Yamaha PSR-E463</h5>
+                        <div class="star">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>€250.00</h4>
+                        <p>Digitalni klavir s 61 tipkami.</p>
+                    </div>
+                    
+                  </div>
+        
+                <!-- Produkt 3 -->
+                <div class="pro" onclick="window.location.href='yamahapacifika.html';">
+                    <img class="shirt" src="images/p6.png" alt="Yamaha Pacifica">
+                    <div class="des">
+                        <span>Yamaha</span>
+                        <h5>Yamaha Pacifica</h5>
+                        <div class="star">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>€130.00</h4>
+                        <p>Električna kitara za začetnike.</p>
+                    </div>
+                    
+                  </div>
+        
+                <!-- Produkt 4 -->
+                <div class="pro" onclick="window.location.href='kitarazaotroke.html';">
+                    <img class="shirt" src="images/p9.png" alt="Yamaha JR-2">
+                    <div class="des">
+                        <span>Yamaha</span>
+                        <h5>Yamaha JR-2</h5>
+                        <div class="star">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>€80.00</h4>
+                        <p>Akustična kitara za otroke.</p>
+                    </div>
+                    
+                  </div>
+        
+                <!-- Produkt 5 -->
+                <div class="pro" onclick="window.location.href='cort.html';">
+                    <img class="shirt" src="images/p10.png" alt="Cort KX 5">
+                    <div class="des">
+                        <span>Cort</span>
+                        <h5>Cort KX 5</h5>
+                        <div class="star">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>€140.00</h4>
+                        <p>Električna kitara z visoko kakovostnimi komponentami.</p>
+                    </div>
+                    
+                  </div>
+        
+                <!-- Produkt 6 -->
+                <div class="pro" onclick="window.location.href='ebobni.html';">
+                    <img class="shirt" src="images/p8.png" alt="Yamaha DTX 542K">
+                    <div class="des">
+                        <span>Yamaha</span>
+                        <h5>Yamaha DTX 542K</h5>
+                        <div class="star">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>€550.00</h4>
+                        <p>Profesionalni elektronski bobni.</p>
+                    </div>
+                    
+                  </div>
+        
+                <!-- Produkt 7 -->
+                <div class="pro" onclick="window.location.href='yamahapacifika.html';">
+                    <img class="shirt" src="images/p6.png" alt="Yamaha Pacifica">
+                    <div class="des">
+                        <span>Yamaha</span>
+                        <h5>Yamaha Pacifica</h5>
+                        <div class="star">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>€130.00</h4>
+                        <p>Električna kitara za začetnike.</p>
+                    </div>
+                    
+                  </div>
+        
+                <!-- Produkt 8 -->
+                <div class="pro" onclick="window.location.href='reface.html';">
+                    <img class="shirt" src="images/p7.png" alt="Yamaha Reface YC">
+                    <div class="des">
+                        <span>Yamaha</span>
+                        <h5>Yamaha Reface YC</h5>
+                        <div class="star">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                        </div>
+                        <h4>€320.00</h4>
+                        <p>Prenosni sintetizator.</p>
+                    </div>
+                    
+                  </div>
+            </div>
+        </section>
+        
+            <section id="newsletter" class="section-p1 section-m1">
+                <div class="newstext">
+                    <h4>Prijavite se na novice</h4>
+                    <p>Prejemajte e-poštna obvestila o naših najnovejših izdelkih in <span>posebnih ponudbah.</span></p>
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Vaš e-poštni naslov">
+                    <button class="normal">Prijavite se</button>
+                </div>
+            </section>
+        
+            <footer class="section-p1">
+                <div class="col">
+                    <img class="logo" src="images/fire.png" alt="" style="width: 40px; height: 40px;">
+                    <h4>Kontakt</h4>
+                    <p style="color: rgb(90, 88, 88);"><strong>Naslov:</strong> Pot Rdečega križa 36, 1000 Ljubljana</p>
+                    <p style="color: rgb(90, 88, 88);"><strong>Telefon:</strong> +386 40 123 456</p>
+                    <p style="color: rgb(90, 88, 88);"><strong>Ure:</strong> 10:00 - 18:00, Pon - Sob</p>
+                    <div class="follow">
+                        <h4>Sledite nam</h4>
+                        <div class="icon">
+                            <i class='bx bxl-facebook'></i>
+                            <i class='bx bxl-twitter'></i>
+                            <i class='bx bxl-instagram'></i>
+                            <i class='bx bxl-pinterest-alt'></i>
+                            <i class='bx bxl-youtube'></i>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col">
+                    <h4>O nas</h4>
+                    <a href="#">O nas</a>
+                    <a href="#">Informacije o dostavi</a>
+                    <a href="#">Pravilnik o zasebnosti</a>
+                    <a href="#">Pogoji in pogoji</a>
+                    <a href="#">Kontaktirajte nas</a>
+                </div>
+        
+                <div class="col">
+                    <h4>Moj račun</h4>
+                    <a href="#">Prijava</a>
+                    <a href="#">Ogled košarice</a>
+                    <a href="#">Moja želja</a>
+                    <a href="#">Sledenje naročilu</a>
+                    <a href="#">Pomoč</a>
+                </div>
+        
+                <div class="col install">
+                    <h4>Namestite aplikacijo</h4>
+                    <p>Iz App Store ali Google Play</p>
+                    <div class="row">
+                        <img src="./img/pay/app.jpg" alt="">
+                        <img src="./img/pay/play.jpg" alt="">
+                    </div>
+                    <p>Varna plačilna sredstva</p>
+                    <img src="./img/pay/pay.png" alt="">
+                </div>
+        
+                <div class="copyright">
+                  <p>© 2024, Music Store by Mustafa Čizmić</p>
+                </div>
+            </footer>
+        
+            <script src="script.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+                crossorigin="anonymous"></script>
+            <!-- jquery JS File -->
+            <script src="js/jquery-3.6.0.min.js"></script>
+            <!-- Isotope JS File -->
+            <script src="plugins/Isotope/isotope.pkgd.min.js"></script>
+            <!-- Owl Carousel JS File -->
+            <script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+            <!-- Javascript File -->
+            <script src="js/modeling.js"></script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+              // Učitavanje broja proizvoda iz sessionStorage
+              let cartCount = parseInt(sessionStorage.getItem("cartCount")) || 0;
+              updateCartDisplay(cartCount);  // Prikazivanje broja proizvoda u košari odmah po učitavanju stranice
+          
+              // Funkcija za dodavanje proizvoda u košaru
+              function addToCart(event) {
+                  event.preventDefault(); // Sprječava default ponašanje linka
+          
+                  // Dohvatimo roditeljsku div elementu sa data-* atributima
+                  const productElement = event.target.closest('.add_to_cart_button');
+                  const product = {
+                      id: productElement.getAttribute('data-id'), // Id proizvoda
+                      name: productElement.getAttribute('data-name'), // Naziv proizvoda
+                      price: parseFloat(productElement.getAttribute('data-price')), // Cena proizvoda
+                      image: productElement.getAttribute('data-image'), // Slika proizvoda
+                      quantity: 1 // Podrazumevana količina
+                  };
+          
+          
+          
+                  // Učitavamo postojeće stavke iz sessionStorage
+                  let cartItems = JSON.parse(sessionStorage.getItem("cartItems")) || [];
+          
+                  // Dodajemo novi proizvod u košaru (ako već nije prisutan)
+                  const existingItemIndex = cartItems.findIndex(item => item.id === product.id);
+                  if (existingItemIndex !== -1) {
+                      cartItems[existingItemIndex].quantity++; // Povećavamo količinu ako proizvod već postoji
+                  } else {
+                      cartItems.push(product); // Dodajemo novi proizvod u košaru
+                  }
+          
+                  // Spremamo ažuriranu košaru u sessionStorage
+                  sessionStorage.setItem("cartItems", JSON.stringify(cartItems));
+          
+                  // Ažuriramo broj proizvoda u košari u sessionStorage
+                  cartCount++;
+                  sessionStorage.setItem("cartCount", cartCount);
+          
+                  // Ažuriranje prikaza broja proizvoda u košari
+                  updateCartDisplay(cartCount);
+          
+                 // Prikazivanje notifikacije sa SweetAlert2
+                    Swal.fire({
+                        title: 'Uspešno!',
+                        text: 'Izdelek je dodan v košaro!',
+                        icon: 'success',
+                        confirmButtonText: 'OK'
+                    });
+              }
+          
+              // Ažuriranje prikaza broja proizvoda u košari
+              function updateCartDisplay(count) {
+                  let cartCountElement = document.getElementById("cart-count");
+                  if (cartCountElement) {
+                      cartCountElement.textContent = count;  // Ažuriramo broj
+                      cartCountElement.style.display = count > 0 ? "inline-block" : "none";  // Ako je broj > 0, prikazujemo
+                  }
+              }
+          
+              // Selektiramo sve dugmiće za dodavanje u košaru
+              let addToCartButtons = document.querySelectorAll(".add-to-cart, .add_to_cart_button");
+          
+              // Dodajemo event listener na svaki od njih
+              addToCartButtons.forEach(button => {
+                  button.addEventListener("click", addToCart);
+              });
+          });
+          
+          
+                </script>
+              
+        </body>
+        
+        </html>
+
+
+
+
